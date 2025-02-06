@@ -150,11 +150,6 @@ public class UsuariosControllers {
 	}
 
 	
-	@GetMapping("/prueba")
-	public String prueba(){
-		return "prueba";
-	}
-	
 //Perfil
 	@GetMapping({"/perfil"})
 	public String mostrar(HttpServletRequest request, Model modelo) {
