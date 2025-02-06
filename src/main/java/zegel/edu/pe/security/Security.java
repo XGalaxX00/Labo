@@ -47,7 +47,7 @@ public class Security {
                 .requestMatchers("/usuarios/**","/scn/**","/eventos/**",
                 		"/competiciones/**","/turnos/**","/clubes/**","/resultados/**").hasAuthority("admin")
                 .requestMatchers("/resultados/mostrar").hasAuthority("juez")
-                .requestMatchers("/usuarios/perfil/**", "/usuarios/perfil/orden-merito").hasAuthority("competidor")
+                .requestMatchers("/inicio/perfil").hasAuthority("competidor")
                 .anyRequest().authenticated()
         )
         .formLogin((login) -> login
