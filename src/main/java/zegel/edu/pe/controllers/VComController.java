@@ -99,7 +99,6 @@ public class VComController {
 		modelo.addAttribute("correo", usuarioAutenticado.getCorreo());
 		modelo.addAttribute("foto", foto);
 		modelo.addAttribute("categoria", usuarioAutenticado.getCategorias().getNombre());
-//			modelo.addAttribute("club", usuarioAutenticado.getClubes().getNombre());
 		modelo.addAttribute("nivel", usuarioAutenticado.getNiveles().getNombre());
 		modelo.addAttribute("puntaje", usuarioAutenticado.getPuntaje().getPuntaje());
 		modelo.addAttribute("eventos", eventosPorCategoria);

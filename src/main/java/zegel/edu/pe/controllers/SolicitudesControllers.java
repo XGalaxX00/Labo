@@ -63,7 +63,7 @@ public class SolicitudesControllers {
 		
 		redirectAttributes.addFlashAttribute("registroExitoso", true);
 		
-		return "redirect:/usuarios/perfil";
+		return "redirect:/inicio/perfil";
 	}
 
 }
